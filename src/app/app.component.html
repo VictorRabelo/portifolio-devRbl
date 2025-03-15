@@ -1,23 +1,23 @@
 <nav class="navbar">
-  <a [routerLink]="['/home']" routerLinkActive="link-active" (click)="scrollTop()"> 
-    <i class="fas fa-home"></i> 
-    <span>Home</span> 
+  <a [routerLink]="['/home']" routerLinkActive="link-active" (click)="scrollTop()">
+    <i class="fas fa-home"></i>
+    <span>Home</span>
   </a>
-  <a [routerLink]="['/sobre']" routerLinkActive="link-active" (click)="scrollTop()"> 
-    <i class="fas fa-user"></i> 
-    <span>Sobre</span> 
+  <a [routerLink]="['/about']" routerLinkActive="link-active" (click)="scrollTop()">
+    <i class="fas fa-user"></i>
+    <span>About</span>
   </a>
-  <a [routerLink]="['/portifolio']" routerLinkActive="link-active" (click)="scrollTop()"> 
-    <i class="fas fa-briefcase"></i> 
-    <span>Portifolio</span> 
+  <a [routerLink]="['/portfolio']" routerLinkActive="link-active" (click)="scrollTop()">
+    <i class="fas fa-briefcase"></i>
+    <span>Portfolio</span>
   </a>
   <!-- <a [routerLink]="['/blogs']" routerLinkActive="link-active"> 
     <i class="fas fa-blog"></i> 
     <span>Blogs</span> 
   </a> -->
-  <a [routerLink]="['/contato']" routerLinkActive="link-active" (click)="scrollTop()"> 
-    <i class="fas fa-address-book"></i> 
-    <span>Contato</span> 
+  <a [routerLink]="['/contact']" routerLinkActive="link-active" (click)="scrollTop()">
+    <i class="fas fa-address-book"></i>
+    <span>Contact</span>
   </a>
 </nav>
 
@@ -25,4 +25,6 @@
   <router-outlet #outlet="outlet"></router-outlet>
 </div>
 
-<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="pacman" [fullScreen]="true"><p style="color: white" > Aguarde... </p></ngx-spinner>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="pacman" [fullScreen]="true">
+  <p style="color: white"> Waiting... </p>
+</ngx-spinner>

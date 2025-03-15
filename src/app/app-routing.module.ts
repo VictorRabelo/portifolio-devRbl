@@ -10,14 +10,14 @@ const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
 
   {path: 'home', component: HomeComponent, data: { animation: 'HomePage' }},
-  
-  {path: 'sobre', component: AboutComponent, data: { animation: 'AboutPage' }},
-  
+
+  {path: 'about', component: AboutComponent, data: { animation: 'AboutPage' }},
+
   {path: 'blogs', component: BlogsComponent, data: { animation: 'BlogsPage' }},
-  
-  {path: 'contato', component: ContactComponent, data: { animation: 'ContactPage' }},
-  
-  {path: 'portifolio', component: PortifolioComponent, data: { animation: 'PortifolioPage' }},
+
+  {path: 'contact', component: ContactComponent, data: { animation: 'ContactPage' }},
+
+  {path: 'portfolio', component: PortifolioComponent, data: { animation: 'PortifolioPage' }},
 ];
 
 @NgModule({

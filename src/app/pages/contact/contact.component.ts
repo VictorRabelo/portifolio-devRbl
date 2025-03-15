@@ -12,7 +12,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent extends ControllerBase {
-  
+
   loading: Boolean = false;
 
   constructor(
@@ -20,17 +20,17 @@ export class ContactComponent extends ControllerBase {
     private service: AppService,
     private message: MessageService,
     private spinner: NgxSpinnerService
-  ) { 
+  ) {
     super();
   }
 
   ngOnInit(): void {
-    this.title.setTitle('DevRbl | Contato');
+    this.title.setTitle('DevRbl | Contact');
   }
 
-  sendMail(form: NgForm): any{
+  sendMail(form: NgForm): any {
     if (!form.valid) {
-      this.message.toastWarning('Preencha os campos obrigatórios!')
+      this.message.toastWarning('Fill in the required fields!')
       return false;
     }
 
@@ -38,10 +38,10 @@ export class ContactComponent extends ControllerBase {
     this.service.sendMail(form.value).then((res) => {
       form.reset();
       this.spinner.hide();
-      this.message.toastSuccess('Email enviado com sucesso!', 'Muito Obrigado!');
+      this.message.toastSuccess('Email sent successfully!', 'Thank you very much!');
     }, (err) => {
       this.spinner.hide();
-      this.message.toastError('Por favor, tente novamente mais tarde!', 'Falha no envio!')
+      this.message.toastError('Please try again later!', 'Sending failed!')
     })
   }
 

@@ -13,7 +13,7 @@ export class PortifolioComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.title.setTitle('DevRbl | Portifolio');
+    this.title.setTitle('DevRbl | Portfolio');
   }
 
 }
